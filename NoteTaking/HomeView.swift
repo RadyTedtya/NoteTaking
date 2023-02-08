@@ -38,6 +38,7 @@ struct HomeView: View {
             ScrollView {
                 VStack {
                     
+                    
                 }
                 .frame(maxWidth: .infinity)
                 .padding()
