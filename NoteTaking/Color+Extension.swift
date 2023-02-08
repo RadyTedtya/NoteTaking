@@ -9,14 +9,8 @@ import Foundation
 import SwiftUI
 
 extension Color {
-    static let primaryColor = Color.init(hex: 0xC0C0C0)
+    static let primaryColor = Color.init(hex: 0x6273ED)
 
-//    static let accentColor = Color.init(hex: 0x13D8CC)
-//    static let secondaryBackground = Color.init(hex: 0x171A24)
-//    static let secondaryDark = Color.init(hex: 0x202532)
-//    static let lightText = Color.init(hex: 0xFFFFFF)
-//    static let darkText = Color.init(hex: 0x7B8D9D)
-//    static let primaryGreen = Color.init(hex: 0x4DC992)
     
     init(hex: UInt, alpha: Double = 1) {
         self.init(

@@ -10,11 +10,17 @@ import Foundation
 
 class ContentViewModel: ObservableObject{
     
-    
-    
+    @Published var searchText: String = ""
+    @Published var selectedNoteType: AllNoteType = .allNotes
     
 }
 
-enum allNoteTypes {
-    case allNotes, reminder, audio, images
+
+
+enum AllNoteType: String, CaseIterable, Identifiable {
+    case allNotes = "All Notes", reminder, audio, images
+    var id: Self {
+        return self
+    }
 }
+

@@ -21,6 +21,7 @@
 		D335120929937148004AF8D5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D335120829937148004AF8D5 /* LoginView.swift */; };
 		D335120B29937286004AF8D5 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D335120A29937286004AF8D5 /* Color+Extension.swift */; };
 		D335120D299374F4004AF8D5 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D335120C299374F4004AF8D5 /* SignUpView.swift */; };
+		D335121129937D2C004AF8D5 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D335121029937D2C004AF8D5 /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		D335120829937148004AF8D5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		D335120A29937286004AF8D5 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		D335120C299374F4004AF8D5 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		D335121029937D2C004AF8D5 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			children = (
 				D30719B9298CF25000B07BB6 /* NoteTakingApp.swift */,
 				D30719BB298CF25000B07BB6 /* ContentView.swift */,
+				D335121029937D2C004AF8D5 /* WelcomeView.swift */,
 				D335120A29937286004AF8D5 /* Color+Extension.swift */,
 				D30719EB298DF17000B07BB6 /* ContentViewModel.swift */,
 				D30719E7298CF68600B07BB6 /* HomeView.swift */,
@@ -283,6 +286,7 @@
 				D30719EC298DF17000B07BB6 /* ContentViewModel.swift in Sources */,
 				D335120B29937286004AF8D5 /* Color+Extension.swift in Sources */,
 				D30719E8298CF68600B07BB6 /* HomeView.swift in Sources */,
+				D335121129937D2C004AF8D5 /* WelcomeView.swift in Sources */,
 				D335120D299374F4004AF8D5 /* SignUpView.swift in Sources */,
 				D30719BC298CF25000B07BB6 /* ContentView.swift in Sources */,
 				D335120929937148004AF8D5 /* LoginView.swift in Sources */,
