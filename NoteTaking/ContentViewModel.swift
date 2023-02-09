@@ -18,20 +18,29 @@ class ContentViewModel: ObservableObject{
 }
 
 enum NoteType: String, CaseIterable, Identifiable {
-    case allNotes = "All Notes", reminderNote, audioNote, imageNote
+    
+    case allNotes = "All Notes"
+    case reminderNote = "reminder"
+    case audioNote = "audio"
+    case imageNote = "image"
+    case videoNote = "video"
+    
     var id: Self {
         return self
     }
+    
     var image: UIImage {
         switch self {
+        case .allNotes:
+            return UIImage(systemName: "photo")!
         case .reminderNote:
             return UIImage(systemName: "bell.circle.fill")!
         case .audioNote:
             return UIImage(systemName: "music.mic.circle.fill")!
         case .imageNote:
             return UIImage(systemName: "photo.circle.fill")!
-        case .allNotes:
-            return UIImage(systemName: "photo")!
+        case .videoNote:
+            return UIImage(systemName: "video.circle.fill")!
         }
     }
 }

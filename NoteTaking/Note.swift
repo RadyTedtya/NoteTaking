@@ -22,12 +22,20 @@ struct Note: Identifiable {
 }
 
 func getTime() -> String {
-    let formatter = DateFormatter()
-    formatter.timeStyle = .short
-    let dateString = formatter.string(from: Date())
-    return dateString
+    let timeFormatter = DateFormatter()
+    timeFormatter.timeStyle = .short
+    let timeString = timeFormatter.string(from: Date())
+    return timeString
 }
 
-    var dummyNote: Note = .init(id: 1, title: "Tedtya's Note", type: .imageNote, description: "test test", date: getTime(), time: getTime(), image: "test", video: "")
+func getDate() -> String {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateStyle = .medium
+    let dateString = dateFormatter.string(from: Date())
+    return dateString
+    
+}
+
+    var dummyNote: Note = .init(id: 1, title: "Tedtya's Note", type: .imageNote, description: "test test", date: getDate(), time: getTime(), image: "test", video: "")
 
 

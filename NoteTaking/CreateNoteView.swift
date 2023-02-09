@@ -11,26 +11,38 @@ import SwiftUI
 struct CreateNoteView: View {
     
     @ObservedObject var viewModel: ContentViewModel
+    @Environment (\.presentationMode) var presentationMode
     
     var body: some View {
-        VStack {
-            //        TextField("My Note", text: )
-            Text("My Notes")
-                .font(.system(size: 25))
+        VStack(alignment: .leading) {
+            TextField(dummyNote.title, text: $viewModel.notes[0].title)
+            .font(.system(size: 25))
+            
             
             HStack {
-//                TextField("24 Nov 2020, ", text: )
-//                TextField("02:38 PM", text: )
-                Text("24 Nov 2020, ")
-                Text("02:38 PM")
+                TextField(dummyNote.date, text: $viewModel.notes[0].date)
+                    .foregroundColor(Color.gray)
+                TextField(dummyNote.time, text: $viewModel.notes[0].time)
+                    .foregroundColor(Color.gray)
             }
         }
+        .padding()
+        .frame(height: 100)
+        .frame(maxWidth: .infinity, alignment: .leading)
         
+        Spacer()
         VStack {
-            Text("")
+            Text("Descriptionf")
         }
         
-        
+        .navigationBarItems(trailing: Button {
             
+            presentationMode.wrappedValue.dismiss()
+        } label: {
+            Image(systemName: "checkmark")
+                .font(.system(size: 20))
+                .foregroundColor(Color.primaryColor)
+        }
+        )
     }
 }

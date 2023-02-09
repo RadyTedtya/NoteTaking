@@ -25,7 +25,7 @@ struct HomeView: View {
     
     
     var body: some View {
-        ZStack(alignment: .top) {
+        VStack {
             Picker("select note", selection: $viewModel.selectedNoteType) {
                 ForEach(NoteType.allCases) {
                     Text($0.rawValue.capitalized)
