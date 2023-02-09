@@ -45,12 +45,15 @@ struct CreateNoteView: View {
         }
         
         HStack(alignment: .bottom) {
-            ForEach(1..<4) { index in
+            Spacer()
+            ForEach(0..<4) { index in
                 Button {
                     
                 } label: {
                     Image(systemName: "music.note")
                 }
+                Spacer()
+                
             }
         }
         .frame(maxWidth: .infinity)

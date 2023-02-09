@@ -37,13 +37,14 @@ struct HomeView: View {
                 
                 ScrollView {
                     VStack {
-                        ForEach(viewModel.notes) { note in
-                            Text(note.title)
+                        ForEach(0..<4) {_ in 
+                            NoteView()
                         }
                     }
-                    .frame(maxWidth: .infinity)
                     .padding()
                 }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                
                 
                 NavigationLink {
                     CreateNoteView(viewModel: viewModel)

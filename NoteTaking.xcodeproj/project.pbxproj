@@ -24,6 +24,7 @@
 		D335121129937D2C004AF8D5 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D335121029937D2C004AF8D5 /* WelcomeView.swift */; };
 		D335121329945A00004AF8D5 /* CreateNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D335121229945A00004AF8D5 /* CreateNoteView.swift */; };
 		D33512152994826D004AF8D5 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33512142994826D004AF8D5 /* Note.swift */; };
+		D33512192994F4CC004AF8D5 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33512182994F4CC004AF8D5 /* NoteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		D335121029937D2C004AF8D5 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		D335121229945A00004AF8D5 /* CreateNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteView.swift; sourceTree = "<group>"; };
 		D33512142994826D004AF8D5 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		D33512182994F4CC004AF8D5 /* NoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				D335121229945A00004AF8D5 /* CreateNoteView.swift */,
 				D33512142994826D004AF8D5 /* Note.swift */,
 				D30719E7298CF68600B07BB6 /* HomeView.swift */,
+				D33512182994F4CC004AF8D5 /* NoteView.swift */,
 				D335120829937148004AF8D5 /* LoginView.swift */,
 				D335120C299374F4004AF8D5 /* SignUpView.swift */,
 				D30719E9298CF89000B07BB6 /* test.png */,
@@ -293,6 +296,7 @@
 				D335120B29937286004AF8D5 /* Color+Extension.swift in Sources */,
 				D335121329945A00004AF8D5 /* CreateNoteView.swift in Sources */,
 				D30719E8298CF68600B07BB6 /* HomeView.swift in Sources */,
+				D33512192994F4CC004AF8D5 /* NoteView.swift in Sources */,
 				D335121129937D2C004AF8D5 /* WelcomeView.swift in Sources */,
 				D33512152994826D004AF8D5 /* Note.swift in Sources */,
 				D335120D299374F4004AF8D5 /* SignUpView.swift in Sources */,
