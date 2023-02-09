@@ -16,7 +16,7 @@ struct CreateNoteView: View {
     var body: some View {
         VStack(alignment: .leading) {
             TextField(dummyNote.title, text: $viewModel.notes[0].title)
-            .font(.system(size: 25))
+                .font(.system(size: 25))
             
             
             HStack {
@@ -26,17 +26,41 @@ struct CreateNoteView: View {
                     .foregroundColor(Color.gray)
             }
         }
-        .padding()
+        .padding(.horizontal)
+        .padding(.bottom, 10)
         .frame(height: 100)
         .frame(maxWidth: .infinity, alignment: .leading)
         
-        Spacer()
-        VStack {
-            Text("Descriptionf")
+        ScrollView {
+            VStack {
+                TextField(dummyNote.description, text: $viewModel.notes[0].description, axis: .vertical)
+                    
+                
+                
+                Image("test")
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 100)
+            }
+            .padding()
         }
         
+        HStack(alignment: .bottom) {
+            ForEach(1..<4) { index in
+                Button {
+                    
+                } label: {
+                    Image(systemName: "music.note")
+                }
+            }
+        }
+        .frame(maxWidth: .infinity)
+        .frame(height: 50, alignment: .center)
+        .background(Color.gray.opacity(0.1))
+        
+        
+        
+        
         .navigationBarItems(trailing: Button {
-            
             presentationMode.wrappedValue.dismiss()
         } label: {
             Image(systemName: "checkmark")

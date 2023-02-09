@@ -25,45 +25,44 @@ struct HomeView: View {
     
     
     var body: some View {
-        VStack {
-            Picker("select note", selection: $viewModel.selectedNoteType) {
-                ForEach(NoteType.allCases) {
-                    Text($0.rawValue.capitalized)
-                    
-                }
-            }
-            .frame(alignment: .top)
-            .pickerStyle(.segmented)
-            
-            ScrollView {
-                VStack {
-                    ForEach(viewModel.notes) { note in
-                        Text(note.title)
+            VStack {
+                Picker("select note", selection: $viewModel.selectedNoteType) {
+                    ForEach(NoteType.allCases) {
+                        Text($0.rawValue.capitalized)
+                        
                     }
                 }
-                .frame(maxWidth: .infinity)
-                .padding()
+                .frame(alignment: .top)
+                .pickerStyle(.segmented)
+                
+                ScrollView {
+                    VStack {
+                        ForEach(viewModel.notes) { note in
+                            Text(note.title)
+                        }
+                    }
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                }
+                
+                NavigationLink {
+                    CreateNoteView(viewModel: viewModel)
+                } label: {
+                    Image(systemName: "plus.circle.fill")
+                        .font(.system(size: 45))
+                        .foregroundColor(Color.primaryColor)
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
+                .padding(.bottom, 30)
+                
+                .searchable(text: $viewModel.searchText)
+                .navigationBarItems(leading: Text("My Note")
+                    .font(.system(size: 20))
+                    .padding(), trailing: Image(systemName: "person.circle.fill")
+                    .frame(width: 30, height: 30)
+                    .padding()
+                )
             }
-            
-            NavigationLink {
-                CreateNoteView(viewModel: viewModel)
-            } label: {
-                Image(systemName: "plus.circle.fill")
-                    .font(.system(size: 45))
-                    .foregroundColor(Color.primaryColor)
-            }
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
-            .padding(.bottom, 30)
-            
-            .searchable(text: $viewModel.searchText)
-            .navigationBarItems(leading: Text("My Note")
-                .font(.system(size: 20))
-                .padding(), trailing: Image(systemName: "person.circle.fill")
-                .frame(width: 30, height: 30)
-                .padding()
-            )
-            
-        }
     }
     
 }
