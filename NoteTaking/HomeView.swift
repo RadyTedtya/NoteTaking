@@ -53,7 +53,7 @@ struct HomeView: View {
                         .font(.system(size: 45))
                         .foregroundColor(Color.primaryColor)
                 }
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottom)
+                .frame(maxWidth: .infinity, alignment: .bottom)
                 .padding(.bottom, 30)
                 
                 .searchable(text: $viewModel.searchText)
