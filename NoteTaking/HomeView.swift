@@ -27,7 +27,7 @@ struct HomeView: View {
     var body: some View {
         ZStack(alignment: .top) {
             Picker("select note", selection: $viewModel.selectedNoteType) {
-                ForEach(AllNoteType.allCases) {
+                ForEach(NoteType.allCases) {
                     Text($0.rawValue.capitalized)
                     
                 }
@@ -37,15 +37,16 @@ struct HomeView: View {
             
             ScrollView {
                 VStack {
-                    
-                    
+                    ForEach(viewModel.notes) { note in
+                        Text(note.title)
+                    }
                 }
                 .frame(maxWidth: .infinity)
                 .padding()
             }
             
-            Button {
-                print("test")
+            NavigationLink {
+                CreateNoteView(viewModel: viewModel)
             } label: {
                 Image(systemName: "plus.circle.fill")
                     .font(.system(size: 45))

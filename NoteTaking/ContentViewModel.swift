@@ -12,13 +12,12 @@ import UIKit
 class ContentViewModel: ObservableObject{
     
     @Published var searchText: String = ""
-    @Published var selectedNoteType: AllNoteType = .allNotes
+    @Published var selectedNoteType: NoteType = .allNotes
+    @Published var notes: [Note] = [dummyNote, dummyNote]
     
 }
 
-
-
-enum AllNoteType: String, CaseIterable, Identifiable {
+enum NoteType: String, CaseIterable, Identifiable {
     case allNotes = "All Notes", reminderNote, audioNote, imageNote
     var id: Self {
         return self
