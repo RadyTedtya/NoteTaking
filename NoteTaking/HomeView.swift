@@ -25,6 +25,64 @@ struct HomeView: View {
     
     
     var body: some View {
+        //                    VStack {
+        //                        Picker("select note", selection: $viewModel.selectedNoteType) {
+        //                            ForEach(NoteType.allCases) {
+        //                                Text($0.rawValue.capitalized)
+        //
+        //                            }
+        //                        }
+        //                        .frame(alignment: .top)
+        //                        .pickerStyle(.segmented)
+        //
+        //                        ScrollView {
+        //                            VStack {
+        //                                ForEach(0..<4) {_ in
+        //                                    NoteView()
+        //                                }
+        //                            }
+        //                            .padding()
+        //                        }
+        //                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        //
+        //
+        //                        NavigationLink {
+        //                            CreateNoteView(viewModel: viewModel)
+        //                        } label: {
+        //                            HStack{
+        //                                Text("+")
+        //                                    .font(.system(size: 22))
+        //                                Text("Create")
+        //                                    .font(.system(size: 18))
+        //                            }
+        //                            .padding()
+        //                            .padding(.horizontal)
+        //                            .foregroundColor(Color.white)
+        //                            .background(Color.primaryColor)
+        //        //                    .clipShape(RoundedRectangle(cornerRadius: 28))
+        //                            .shadow(radius: 100)
+        //                            .mask(RoundedRectangle(cornerRadius: 28))
+        //                        }
+        //                        .frame(maxWidth: .infinity, alignment: .bottom)
+        //                        .padding(.bottom, 30)
+        //
+        //                        .searchable(text: $viewModel.searchText, prompt: "Search Anything")
+        //                        .navigationBarItems(leading: Text("My Note")
+        //                            .font(.system(size: 20))
+        //                            .padding(), trailing: Image(systemName: "person.circle.fill")
+        //                            .frame(width: 30, height: 30)
+        //                            .padding()
+        //                        )
+        //                    }
+        
+        
+        
+        
+        
+        
+        
+        
+        ZStack {
             VStack {
                 Picker("select note", selection: $viewModel.selectedNoteType) {
                     ForEach(NoteType.allCases) {
@@ -37,36 +95,60 @@ struct HomeView: View {
                 
                 ScrollView {
                     VStack {
-                        ForEach(0..<4) {_ in 
+                        ForEach(0..<4) {_ in
                             NoteView()
                         }
                     }
                     .padding()
                 }
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                
-                
-                NavigationLink {
-                    CreateNoteView(viewModel: viewModel)
-                } label: {
-                    Image(systemName: "plus.circle.fill")
-                        .font(.system(size: 45))
-                        .foregroundColor(Color.primaryColor)
-                }
-                .frame(maxWidth: .infinity, alignment: .bottom)
-                .padding(.bottom, 30)
-                
-                .searchable(text: $viewModel.searchText)
-                .navigationBarItems(leading: Text("My Note")
-                    .font(.system(size: 20))
-                    .padding(), trailing: Image(systemName: "person.circle.fill")
-                    .frame(width: 30, height: 30)
-                    .padding()
-                )
             }
+            
+            
+            VStack(alignment:.trailing) {
+                Spacer()
+                HStack {
+                    Spacer()
+                    NavigationLink {
+                        CreateNoteView(viewModel: viewModel)
+                    } label: {
+                        HStack{
+                            Text("+")
+                                .font(.system(size: 22))
+                            Text("Create")
+                                .font(.system(size: 18))
+                        }
+                        .padding()
+                        .padding(.horizontal)
+                        .foregroundColor(Color.white)
+                        .background(Color.primaryColor)
+                        .clipShape(RoundedRectangle(cornerRadius: 28))
+                        .shadow(radius: 15)
+                    }
+                    
+                }
+            }
+            .padding(.trailing, 15)
+        }
+        .searchable(text: $viewModel.searchText, prompt: "Search Anything")
+        .navigationBarItems(leading: Text("My Note")
+            .font(.system(size: 20))
+            .padding(), trailing: Image(systemName: "person.circle.fill")
+            .frame(width: 30, height: 30)
+            .padding()
+        )
+        
     }
     
+    
+    
+    
+    
+    
+    
+    
 }
+
+
 
 
 

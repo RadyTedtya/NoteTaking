@@ -30,7 +30,8 @@ struct NoteView: View {
             
             Text(dummyDescription_Half)
                 .multilineTextAlignment(.leading)
-            
+                .font(.system(size: 15, design: .rounded))
+                .lineSpacing(8)
         }
         .padding()
         .background(Color.gray.opacity(0.1))

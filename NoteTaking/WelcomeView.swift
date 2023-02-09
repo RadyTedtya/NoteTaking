@@ -38,6 +38,7 @@ struct WelcomeView:View {
                             .background(Color.gray)
                             .foregroundColor(Color.white)
                             .clipShape(RoundedRectangle(cornerRadius: 28))
+                            .shadow(radius: 15)
                         }
                         .padding(.trailing, 20)
                 }
