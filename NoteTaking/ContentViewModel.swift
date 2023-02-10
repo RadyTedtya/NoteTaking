@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SwiftUI
 
 
 class ContentViewModel: ObservableObject{
@@ -32,8 +33,10 @@ enum NoteType: String, CaseIterable, Identifiable {
     var image: UIImage {
         switch self {
         case .allNotes:
+//            return Image(systemName: "photo").foregroundColor(Color.primaryColor) as! UIImage
             return UIImage(systemName: "photo")!
         case .reminderNote:
+//            return Image(systemName: "bell.circle.fill").foregroundColor(Color.primaryColor) as! UIImage
             return UIImage(systemName: "bell.circle.fill")!
         case .audioNote:
             return UIImage(systemName: "music.mic.circle.fill")!
