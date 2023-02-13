@@ -11,6 +11,7 @@ import SwiftUI
 extension Color {
     static let primaryColor = Color.init(hex: 0x6273ED)
     static let primaryFontColor = Color.init(hex: 0xD8D8D8)
+    static let secondaryTextColor = Color.init(hex: 0x343434)
 
     
     init(hex: UInt, alpha: Double = 1) {

@@ -15,8 +15,7 @@ struct HomeView: View {
     
     init(viewModel: ContentViewModel) {
         self.viewModel = viewModel
-        
-        UISegmentedControl.appearance().selectedSegmentTintColor = UIColor(Color.primary)
+        UISegmentedControl.appearance().selectedSegmentTintColor = UIColor(Color.primaryColor)
         UISegmentedControl.appearance().backgroundColor = UIColor(Color.white)
         UISegmentedControl.appearance().setTitleTextAttributes([.foregroundColor: UIColor.white], for: .selected)
     }
@@ -30,6 +29,7 @@ struct HomeView: View {
                     ForEach(NoteType.allCases) {
                         Text($0.rawValue.capitalized)
                     }
+                    .foregroundColor(Color.secondaryTextColor)
                 }
                 .frame(alignment: .top)
                 .pickerStyle(.segmented)
