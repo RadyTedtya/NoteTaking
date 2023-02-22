@@ -14,7 +14,7 @@ class ContentViewModel: ObservableObject{
     
     @Published var searchText: String = ""
     @Published var selectedNoteType: NoteType = .allNotes
-    @Published var notes: [Note] = [dummyNote, dummyNote]
+    @Published var notes: [Note] = [Note.dummyNote, Note.dummyNote]
     
 }
 

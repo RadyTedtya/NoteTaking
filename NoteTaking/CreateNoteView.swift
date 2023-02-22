@@ -39,18 +39,18 @@ struct CreateNoteView: View {
     
     @ObservedObject var viewModel: ContentViewModel
     @Environment (\.presentationMode) var presentationMode
-    public var test:String = dummyDescription_Half
+    public var test:String = Note.dummyDescription_Half
     
     var body: some View {
         
         VStack(alignment: .leading) {
-            TextField(dummyNote.title, text: $viewModel.notes[0].title)
+            TextField(Note.dummyNote.title, text: $viewModel.notes[0].title)
                 .font(.system(size: 25))
             
             HStack {
-                TextField(dummyNote.date, text: $viewModel.notes[0].date)
+                TextField(Note.dummyNote.date, text: $viewModel.notes[0].date)
                     .foregroundColor(Color.gray)
-                TextField(dummyNote.time, text: $viewModel.notes[0].time)
+                TextField(Note.dummyNote.time, text: $viewModel.notes[0].time)
                     .foregroundColor(Color.gray)
             }
         }
@@ -62,7 +62,7 @@ struct CreateNoteView: View {
         ZStack(alignment: .bottom) {
             ScrollView{
                 VStack {
-                    TextField(dummyDescription_Half, text: $viewModel.notes[0].description, axis: .vertical)
+                    TextField(Note.dummyDescription_Half, text: $viewModel.notes[0].description, axis: .vertical)
                         
                     Spacer()
                     Image("test")

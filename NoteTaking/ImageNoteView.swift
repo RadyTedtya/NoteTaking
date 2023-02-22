@@ -43,7 +43,7 @@ struct ImageNoteView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 10))
                 .padding(.bottom)
             
-            Text(dummyDescription_Half)
+            Text(Note.dummyDescription_Half)
                 .multilineTextAlignment(.leading)
                 .font(.system(size: 12, design: .rounded))
                 .lineSpacing(8)
