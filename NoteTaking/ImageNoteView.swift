@@ -29,7 +29,7 @@ struct ImageNoteView: View {
             }
             .frame(maxWidth: .infinity)
             .padding(.bottom, 10)
-            
+
             .overlay(   Rectangle()
                 .frame(height: 1)
                 .foregroundColor(Color.gray.opacity(0.2)),
