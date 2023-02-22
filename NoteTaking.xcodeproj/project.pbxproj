@@ -25,6 +25,8 @@
 		D335121329945A00004AF8D5 /* CreateNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D335121229945A00004AF8D5 /* CreateNoteView.swift */; };
 		D33512152994826D004AF8D5 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33512142994826D004AF8D5 /* Note.swift */; };
 		D33512192994F4CC004AF8D5 /* ImageNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33512182994F4CC004AF8D5 /* ImageNoteView.swift */; };
+		D3B55A7729A60F6C00C68DDE /* ReminderNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B55A7629A60F6C00C68DDE /* ReminderNoteView.swift */; };
+		D3B55A7929A60F7700C68DDE /* AudioNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B55A7829A60F7700C68DDE /* AudioNoteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		D335121229945A00004AF8D5 /* CreateNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteView.swift; sourceTree = "<group>"; };
 		D33512142994826D004AF8D5 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		D33512182994F4CC004AF8D5 /* ImageNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageNoteView.swift; sourceTree = "<group>"; };
+		D3B55A7629A60F6C00C68DDE /* ReminderNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderNoteView.swift; sourceTree = "<group>"; };
+		D3B55A7829A60F7700C68DDE /* AudioNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioNoteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,8 @@
 				D33512142994826D004AF8D5 /* Note.swift */,
 				D30719E7298CF68600B07BB6 /* HomeView.swift */,
 				D33512182994F4CC004AF8D5 /* ImageNoteView.swift */,
+				D3B55A7629A60F6C00C68DDE /* ReminderNoteView.swift */,
+				D3B55A7829A60F7700C68DDE /* AudioNoteView.swift */,
 				D335120829937148004AF8D5 /* LoginView.swift */,
 				D335120C299374F4004AF8D5 /* SignUpView.swift */,
 				D30719E9298CF89000B07BB6 /* test.png */,
@@ -293,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D30719EC298DF17000B07BB6 /* ContentViewModel.swift in Sources */,
+				D3B55A7929A60F7700C68DDE /* AudioNoteView.swift in Sources */,
 				D335120B29937286004AF8D5 /* Color+Extension.swift in Sources */,
 				D335121329945A00004AF8D5 /* CreateNoteView.swift in Sources */,
 				D30719E8298CF68600B07BB6 /* HomeView.swift in Sources */,
@@ -300,6 +307,7 @@
 				D335121129937D2C004AF8D5 /* WelcomeView.swift in Sources */,
 				D33512152994826D004AF8D5 /* Note.swift in Sources */,
 				D335120D299374F4004AF8D5 /* SignUpView.swift in Sources */,
+				D3B55A7729A60F6C00C68DDE /* ReminderNoteView.swift in Sources */,
 				D30719BC298CF25000B07BB6 /* ContentView.swift in Sources */,
 				D335120929937148004AF8D5 /* LoginView.swift in Sources */,
 				D30719BA298CF25000B07BB6 /* NoteTakingApp.swift in Sources */,
