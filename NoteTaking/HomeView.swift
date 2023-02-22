@@ -37,7 +37,7 @@ struct HomeView: View {
                 ScrollView {
                     VStack {
                         ForEach(0..<4) {_ in
-                            NoteView()
+                            ImageNoteView()
                         }
                     }
                     .padding()

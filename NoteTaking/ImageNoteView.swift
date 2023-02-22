@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct NoteView: View {
+struct ImageNoteView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -58,6 +58,6 @@ struct NoteView: View {
 
 struct NoteView_Preview: PreviewProvider {
     static var previews: some View {
-        NoteView()
+        ImageNoteView()
     }
 }
